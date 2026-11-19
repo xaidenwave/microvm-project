@@ -1,0 +1,303 @@
+% References for "Where Does Virtual Machine Boot Time Go?"
+% Group 3, Cloud Computing (ITITE503), NSUT.
+% Entries were checked against publisher or proceedings pages where marked "verified".
+
+%% ---------------------------------------------------------------- Foundations
+@article{popek1974,
+  author  = {Popek, Gerald J. and Goldberg, Robert P.},
+  title   = {Formal Requirements for Virtualizable Third Generation Architectures},
+  journal = {Communications of the ACM},
+  volume  = {17},
+  number  = {7},
+  pages   = {412--421},
+  year    = {1974},
+  doi     = {10.1145/361011.361073}
+}
+
+@inproceedings{barham2003xen,
+  author    = {Barham, Paul and Dragovic, Boris and Fraser, Keir and Hand, Steven and Harris, Tim and Ho, Alex and Neugebauer, Rolf and Pratt, Ian and Warfield, Andrew},
+  title     = {Xen and the Art of Virtualization},
+  booktitle = {Proceedings of the 19th ACM Symposium on Operating Systems Principles (SOSP)},
+  pages     = {164--177},
+  year      = {2003},
+  doi       = {10.1145/945445.945462}
+}
+
+@article{uhlig2005vt,
+  author  = {Uhlig, Rich and Neiger, Gil and Rodgers, Dion and Santoni, Amy L. and Martins, Fernando C. M. and Anderson, Andrew V. and Bennett, Steven M. and K{\"a}gi, Alain and Leung, Felix H. and Smith, Larry},
+  title   = {Intel Virtualization Technology},
+  journal = {Computer},
+  volume  = {38},
+  number  = {5},
+  pages   = {48--56},
+  year    = {2005},
+  doi     = {10.1109/MC.2005.163}
+}
+
+@inproceedings{bellard2005qemu,
+  author    = {Bellard, Fabrice},
+  title     = {{QEMU}, a Fast and Portable Dynamic Translator},
+  booktitle = {Proceedings of the USENIX Annual Technical Conference, FREENIX Track},
+  pages     = {41--46},
+  year      = {2005}
+}
+
+@inproceedings{kivity2007kvm,
+  author    = {Kivity, Avi and Kamay, Yaniv and Laor, Dor and Lublin, Uri and Liguori, Anthony},
+  title     = {kvm: the {Linux} Virtual Machine Monitor},
+  booktitle = {Proceedings of the Linux Symposium},
+  volume    = {1},
+  pages     = {225--230},
+  year      = {2007},
+  address   = {Ottawa, Canada}
+}
+
+@article{russell2008virtio,
+  author  = {Russell, Rusty},
+  title   = {virtio: Towards a De-facto Standard for Virtual {I/O} Devices},
+  journal = {ACM SIGOPS Operating Systems Review},
+  volume  = {42},
+  number  = {5},
+  pages   = {95--103},
+  year    = {2008},
+  doi     = {10.1145/1400097.1400108}
+}
+
+%% ---------------------------------------------------------------- VMs vs containers, lightweight virtualization
+@inproceedings{felter2015,
+  author    = {Felter, Wes and Ferreira, Alexandre and Rajamony, Ram and Rubio, Juan},
+  title     = {An Updated Performance Comparison of Virtual Machines and {Linux} Containers},
+  booktitle = {IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)},
+  pages     = {171--172},
+  year      = {2015},
+  doi       = {10.1109/ISPASS.2015.7095802}
+}
+
+@inproceedings{madhavapeddy2013unikernels,
+  author    = {Madhavapeddy, Anil and Mortier, Richard and Rotsos, Charalampos and Scott, David and Singh, Balraj and Gazagnaire, Thomas and Smith, Steven and Hand, Steven and Crowcroft, Jon},
+  title     = {Unikernels: Library Operating Systems for the Cloud},
+  booktitle = {Proceedings of the 18th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+  pages     = {461--472},
+  year      = {2013},
+  doi       = {10.1145/2451116.2451167}
+}
+
+@inproceedings{manco2017lightvm,
+  author    = {Manco, Filipe and Lupu, Costin and Schmidt, Florian and Mendes, Jose and Kuenzer, Simon and Sati, Sumit and Yasukata, Kenichi and Raiciu, Costin and Huici, Felipe},
+  title     = {My {VM} is Lighter (and Safer) than your Container},
+  booktitle = {Proceedings of the 26th Symposium on Operating Systems Principles (SOSP)},
+  pages     = {218--233},
+  year      = {2017},
+  doi       = {10.1145/3132747.3132763}
+}
+
+@inproceedings{young2019gvisor,
+  author    = {Young, Ethan G. and Zhu, Pengfei and Caraza-Harter, Tyler and Arpaci-Dusseau, Andrea C. and Arpaci-Dusseau, Remzi H.},
+  title     = {The True Cost of Containing: A {gVisor} Case Study},
+  booktitle = {11th USENIX Workshop on Hot Topics in Cloud Computing (HotCloud)},
+  year      = {2019}
+}
+
+% verified (NSDI '20 proceedings, running pages 419-434)
+@inproceedings{agache2020firecracker,
+  author    = {Agache, Alexandru and Brooker, Marc and Florescu, Andreea and Iordache, Alexandra and Liguori, Anthony and Neugebauer, Rolf and Piwonka, Phil and Popa, Diana-Maria},
+  title     = {Firecracker: Lightweight Virtualization for Serverless Applications},
+  booktitle = {17th USENIX Symposium on Networked Systems Design and Implementation (NSDI)},
+  pages     = {419--434},
+  year      = {2020}
+}
+
+% verified (ACM reference block, DOI 10.1145/3381052.3381315)
+@inproceedings{anjali2020blending,
+  author    = {Anjali and Caraza-Harter, Tyler and Swift, Michael M.},
+  title     = {Blending Containers and Virtual Machines: A Study of {Firecracker} and {gVisor}},
+  booktitle = {Proceedings of the 16th ACM SIGPLAN/SIGOPS International Conference on Virtual Execution Environments (VEE)},
+  pages     = {101--113},
+  year      = {2020},
+  doi       = {10.1145/3381052.3381315}
+}
+
+@inproceedings{kuenzer2021unikraft,
+  author    = {Kuenzer, Simon and B{\u{a}}doiu, Vlad-Andrei and Lefeuvre, Hugo and Santhanam, Sharan and Jung, Alexander and Gain, Gaulthier and Soldani, Cyril and Lupu, Costin and Teodorescu, {\c{S}}tefan and R{\u{a}}ducanu, Costi and others},
+  title     = {Unikraft: Fast, Specialized Unikernels the Easy Way},
+  booktitle = {Proceedings of the 16th European Conference on Computer Systems (EuroSys)},
+  pages     = {376--394},
+  year      = {2021},
+  doi       = {10.1145/3447786.3456248}
+}
+
+% verified (SCITEPRESS, DOI 10.5220/0010440502150223)
+@inproceedings{li2021lightweight,
+  author    = {Li, Guoqing and Takahashi, Keichi and Ichikawa, Kohei and Iida, Hajimu and Thiengburanathum, Pree and Phannachitta, Passakorn},
+  title     = {Comparative Performance Study of Lightweight Hypervisors Used in Container Environment},
+  booktitle = {Proceedings of the 11th International Conference on Cloud Computing and Services Science (CLOSER)},
+  pages     = {215--223},
+  year      = {2021},
+  doi       = {10.5220/0010440502150223}
+}
+
+%% ---------------------------------------------------------------- Serverless and cold starts
+@misc{jonas2019berkeley,
+  author       = {Jonas, Eric and Schleier-Smith, Johann and Sreekanti, Vikram and Tsai, Chia-Che and Khandelwal, Anurag and Pu, Qifan and Shankar, Vaishaal and Carreira, Joao and Krauth, Karl and Yadwadkar, Neeraja and Gonzalez, Joseph E. and Popa, Raluca Ada and Stoica, Ion and Patterson, David A.},
+  title        = {Cloud Programming Simplified: A {Berkeley} View on Serverless Computing},
+  howpublished = {arXiv preprint arXiv:1902.03383},
+  year         = {2019}
+}
+
+@inproceedings{wang2018peeking,
+  author    = {Wang, Liang and Li, Mengyuan and Zhang, Yinqian and Ristenpart, Thomas and Swift, Michael},
+  title     = {Peeking Behind the Curtains of Serverless Platforms},
+  booktitle = {USENIX Annual Technical Conference (USENIX ATC)},
+  pages     = {133--146},
+  year      = {2018}
+}
+
+@inproceedings{oakes2018sock,
+  author    = {Oakes, Edward and Yang, Leon and Zhou, Dennis and Houck, Kevin and Harter, Tyler and Arpaci-Dusseau, Andrea C. and Arpaci-Dusseau, Remzi H.},
+  title     = {{SOCK}: Rapid Task Provisioning with Serverless-Optimized Containers},
+  booktitle = {USENIX Annual Technical Conference (USENIX ATC)},
+  pages     = {57--70},
+  year      = {2018}
+}
+
+@inproceedings{shahrad2020wild,
+  author    = {Shahrad, Mohammad and Fonseca, Rodrigo and Goiri, {\'I}{\~n}igo and Chaudhry, Gohar and Batum, Paul and Cooke, Jason and Laureano, Eduardo and Tresness, Colby and Russinovich, Mark and Bianchini, Ricardo},
+  title     = {Serverless in the Wild: Characterizing and Optimizing the Serverless Workload at a Large Cloud Provider},
+  booktitle = {USENIX Annual Technical Conference (USENIX ATC)},
+  pages     = {205--218},
+  year      = {2020}
+}
+
+@inproceedings{du2020catalyzer,
+  author    = {Du, Dong and Yu, Tianyi and Xia, Yubin and Zang, Binyu and Yan, Guanglu and Qin, Chenggang and Wu, Qixuan and Chen, Haibo},
+  title     = {Catalyzer: Sub-millisecond Startup for Serverless Computing with Initialization-less Booting},
+  booktitle = {Proceedings of the 25th International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+  pages     = {467--481},
+  year      = {2020},
+  doi       = {10.1145/3373376.3378512}
+}
+
+@inproceedings{ustiugov2021reap,
+  author    = {Ustiugov, Dmitrii and Petrov, Plamen and Kogias, Marios and Bugnion, Edouard and Grot, Boris},
+  title     = {Benchmarking, Analysis, and Optimization of Serverless Function Snapshots},
+  booktitle = {Proceedings of the 26th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+  pages     = {559--572},
+  year      = {2021},
+  doi       = {10.1145/3445814.3446714}
+}
+
+% verified (ACM reference block, DOI 10.1145/3492321.3524270, pages 730-746)
+@inproceedings{ao2022faasnap,
+  author    = {Ao, Lixiang and Porter, George and Voelker, Geoffrey M.},
+  title     = {{FaaSnap}: {FaaS} Made Fast Using Snapshot-based {VMs}},
+  booktitle = {Proceedings of the 17th European Conference on Computer Systems (EuroSys)},
+  pages     = {730--746},
+  year      = {2022},
+  doi       = {10.1145/3492321.3524270}
+}
+
+% verified (USENIX ATC '23 page, pages 315-328)
+@inproceedings{brooker2023ondemand,
+  author    = {Brooker, Marc and Danilov, Mike and Greenwood, Chris and Piwonka, Phil},
+  title     = {On-demand Container Loading in {AWS} {Lambda}},
+  booktitle = {USENIX Annual Technical Conference (USENIX ATC)},
+  pages     = {315--328},
+  year      = {2023}
+}
+
+% verified (OSDI '24 page)
+@inproceedings{lazarev2024sabre,
+  author    = {Lazarev, Nikita and Gohil, Varun and Tsai, James and Anderson, Andy and Chitlur, Bhushan and Zhang, Zhiru and Delimitrou, Christina},
+  title     = {Sabre: Hardware-Accelerated Snapshot Compression for Serverless {MicroVMs}},
+  booktitle = {18th USENIX Symposium on Operating Systems Design and Implementation (OSDI)},
+  year      = {2024}
+}
+
+% verified (OpenAlex record for DOI 10.1007/s00607-024-01335-5)
+@article{ghorbian2024survey,
+  author  = {Ghorbian, Mohsen and Ghobaei-Arani, Mostafa},
+  title   = {A Survey on the Cold Start Latency Approaches in Serverless Computing: An Optimization-based Perspective},
+  journal = {Computing},
+  volume  = {106},
+  number  = {11},
+  pages   = {3755--3809},
+  year    = {2024},
+  doi     = {10.1007/s00607-024-01335-5}
+}
+
+% verified (arXiv 2310.08437 journal reference)
+@article{golec2024coldstart,
+  author  = {Golec, Muhammed and Walia, Guneet Kaur and Kumar, Mohit and Cuadrado, Felix and Gill, Sukhpal Singh and Uhlig, Steve},
+  title   = {Cold Start Latency in Serverless Computing: A Systematic Review, Taxonomy, and Future Directions},
+  journal = {ACM Computing Surveys},
+  year    = {2024},
+  doi     = {10.1145/3700875}
+}
+
+%% ---------------------------------------------------------------- Memory deduplication and its security
+% verified (kernel.org OLS 2009 archive, pages 19-28)
+@inproceedings{arcangeli2009ksm,
+  author    = {Arcangeli, Andrea and Eidus, Izik and Wright, Chris},
+  title     = {Increasing Memory Density by Using {KSM}},
+  booktitle = {Proceedings of the Linux Symposium},
+  pages     = {19--28},
+  year      = {2009},
+  address   = {Montreal, Canada}
+}
+
+@inproceedings{suzaki2011dedup,
+  author    = {Suzaki, Kuniyasu and Iijima, Kengo and Yagi, Toshiki and Artho, Cyrille},
+  title     = {Memory Deduplication as a Threat to the Guest {OS}},
+  booktitle = {Proceedings of the Fourth European Workshop on System Security (EuroSec)},
+  year      = {2011},
+  doi       = {10.1145/1972551.1972552}
+}
+
+@inproceedings{razavi2016ffs,
+  author    = {Razavi, Kaveh and Gras, Ben and Bosman, Erik and Preneel, Bart and Giuffrida, Cristiano and Bos, Herbert},
+  title     = {Flip {Feng} {Shui}: Hammering a Needle in the Software Stack},
+  booktitle = {25th USENIX Security Symposium},
+  pages     = {1--18},
+  year      = {2016}
+}
+
+%% ---------------------------------------------------------------- Software and documentation
+@misc{fcspec,
+  author       = {{Firecracker Project}},
+  title        = {Firecracker Specification},
+  howpublished = {\url{https://github.com/firecracker-microvm/firecracker/blob/main/SPECIFICATION.md}},
+  note         = {Accessed 19 November 2026},
+  year         = {2026}
+}
+
+@misc{qemumicrovm,
+  author       = {{QEMU Project}},
+  title        = {`microvm' Virtual Platform},
+  howpublished = {\url{https://www.qemu.org/docs/master/system/i386/microvm.html}},
+  note         = {Accessed 19 November 2026},
+  year         = {2026}
+}
+
+@misc{kernelksm,
+  author       = {{The Linux Kernel Documentation}},
+  title        = {Kernel Samepage Merging},
+  howpublished = {\url{https://docs.kernel.org/admin-guide/mm/ksm.html}},
+  note         = {Accessed 19 November 2026},
+  year         = {2026}
+}
+
+@misc{hyperfine,
+  author       = {Peter, David},
+  title        = {hyperfine},
+  howpublished = {\url{https://github.com/sharkdp/hyperfine}},
+  note         = {Version 1.20.0 was used in this study},
+  year         = {2023}
+}
+
+@misc{katacontainers,
+  author       = {{Kata Containers Project}},
+  title        = {Kata Containers},
+  howpublished = {\url{https://katacontainers.io/}},
+  note         = {Accessed 19 November 2026},
+  year         = {2026}
+}

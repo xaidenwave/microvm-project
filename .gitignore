@@ -4,3 +4,11 @@ release-v*/
 firecracker
 *.tar.gz
 .DS_Store
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz

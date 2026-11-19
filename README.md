@@ -1,5 +1,7 @@
 # MicroVMs vs Traditional VMs: Boot Time, Overhead and Memory Density on KVM
 
+📄 **Paper:** [PDF](paper/MicroVM_Research_Paper_Group3.pdf) · [LaTeX source](paper/)
+
 A controlled experiment comparing how fast and how cheaply different kinds of
 isolated environments start on the same KVM hypervisor: a traditional VM,
 QEMU's `microvm` machine type, AWS Firecracker, and a Podman container.
@@ -227,9 +229,3 @@ evidence, since system-wide `free -m` figures were affected by desktop activity.
 - F. Manco et al., "My VM is Lighter (and Safer) than your Container," ACM SOSP, 2017.
 - K. Razavi et al., "Flip Feng Shui: Hammering a Needle in the Software Stack," USENIX Security, 2016.
 - M. Shahrad et al., "Serverless in the Wild," USENIX ATC, 2020.
-
-## AI assistance
-
-Claude (Anthropic) assisted with experiment design, scripting, data
-visualisation and documentation. All experiments were run by the authors and
-all results come from the raw logs in this repository.

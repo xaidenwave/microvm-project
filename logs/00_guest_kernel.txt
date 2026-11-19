@@ -1,0 +1,1 @@
+firecracker-ci/v1.15/x86_64/vmlinux-6.1.155

@@ -1,0 +1,15 @@
+run 1 booted_after=12.899s
+run 1 [   10.502530] sh[922]: Startup finished in 1.210s (kernel) + 3.829s (initrd) + 5.435s (userspace) = 10.475s
+run 1 total=15.600s
+run 2 booted_after=12.348s
+run 2 [    9.962929] sh[929]: Startup finished in 1.201s (kernel) + 3.018s (initrd) + 5.728s (userspace) = 9.948s
+run 2 total=15.039s
+run 3 booted_after=11.635s
+run 3 [    9.260627] sh[919]: Startup finished in 1.201s (kernel) + 2.980s (initrd) + 5.053s (userspace) = 9.235s
+run 3 total=14.325s
+run 4 booted_after=12.818s
+run 4 [   10.439531] sh[927]: Startup finished in 1.201s (kernel) + 3.838s (initrd) + 5.382s (userspace) = 10.422s
+run 4 total=15.521s
+run 5 booted_after=13.054s
+run 5 [   10.635248] sh[928]: Startup finished in 1.207s (kernel) + 3.824s (initrd) + 5.588s (userspace) = 10.621s
+run 5 total=15.783s

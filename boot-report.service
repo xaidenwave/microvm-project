@@ -1,0 +1,8 @@
+[Unit]
+Description=Report boot time and power off
+[Service]
+Type=simple
+StandardOutput=journal+console
+ExecStart=/bin/sh -c 'systemctl is-system-running --wait; echo BOOTED; systemd-analyze; systemd-analyze blame | head -15; systemctl poweroff'
+[Install]
+WantedBy=multi-user.target

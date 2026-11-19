@@ -1,0 +1,21 @@
+== t2 baseline (no VMs, KSM off)
+               total        used        free      shared  buff/cache   available
+Mem:           15804        3346        7850         779        5435       12458
+Swap:           8191           0        8191
+== 20 VMs running, KSM off
+               total        used        free      shared  buff/cache   available
+Mem:           15804        4746        6449         779        5436       11057
+Swap:           8191           0        8191
+vmm_count=20
+rss_total_MB=2277.16
+== KSM on: ksmd CPU usage for 10 s
+Average:        0        51    0.00    6.40    0.00    0.00    6.40     -  ksmd
+== 20 VMs running, KSM on for 60 s
+               total        used        free      shared  buff/cache   available
+Mem:           15804        3815        7379         779        5437       11988
+Swap:           8191           0        8191
+/sys/kernel/mm/ksm/pages_shared:5113
+/sys/kernel/mm/ksm/pages_sharing:134649
+/sys/kernel/mm/ksm/general_profit:540152576
+avg_merged_pages_per_vmm=6988.1 (27.2973 MB)
+== done, KSM stopped and unmerged

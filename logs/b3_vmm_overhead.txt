@@ -1,0 +1,14 @@
+    PID   RSS    VSZ NLWP COMMAND
+  16852 116488 537120   4 qemu-system-x86
+    PID   RSS    VSZ NLWP COMMAND
+  16945 48488 137048    3 firecracker
+ID            NAME        CPU %       MEM USAGE / LIMIT  MEM %       NET IO       BLOCK IO    PIDS        CPU TIME    AVG CPU %
+abb5876e093a  t4sleep     0.04%       249.9kB / 16.57GB  0.00%       258B / 542B  0B / 0B     1           4.54ms      0.04%
+-rwxr-xr-x. 1 sayon sayon 3.6M Sep  4 16:15 firecracker
+-rwxr-xr-x. 1 root  root   26M Mar 23  2026 /usr/bin/qemu-system-x86_64
+78
+	statically linked
+    PID   RSS    VSZ NLWP COMMAND
+  18009 506404 1960492 12 qemu-system-x86
+    PID   RSS    VSZ NLWP COMMAND
+  18086  2252 235356    1 conmon

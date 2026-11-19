@@ -1,0 +1,21 @@
+Benchmark 1: T2 QEMU microvm
+  Time (mean ± σ):     162.5 ms ±   5.4 ms    [User: 110.0 ms, System: 40.5 ms]
+  Range (min … max):   155.0 ms … 179.0 ms    30 runs
+ 
+Benchmark 2: T3 Firecracker default
+  Time (mean ± σ):     631.0 ms ±   3.4 ms    [User: 75.6 ms, System: 33.7 ms]
+  Range (min … max):   624.7 ms … 637.9 ms    30 runs
+ 
+Benchmark 3: T3 Firecracker tuned
+  Time (mean ± σ):     118.6 ms ±   3.4 ms    [User: 73.1 ms, System: 32.9 ms]
+  Range (min … max):   113.9 ms … 125.4 ms    30 runs
+ 
+Benchmark 4: T4 Podman container
+  Time (mean ± σ):     135.4 ms ±  22.5 ms    [User: 40.3 ms, System: 31.9 ms]
+  Range (min … max):   113.7 ms … 195.0 ms    30 runs
+ 
+Summary
+  T3 Firecracker tuned ran
+    1.14 ± 0.19 times faster than T4 Podman container
+    1.37 ± 0.06 times faster than T2 QEMU microvm
+    5.32 ± 0.16 times faster than T3 Firecracker default

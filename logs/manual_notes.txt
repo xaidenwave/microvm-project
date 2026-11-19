@@ -1,0 +1,4 @@
+Preliminary single runs (quiet, read-only rootfs):
+T2 qemu-microvm: guest 0.058s, wall 0.178s
+T3 firecracker default: guest 0.567s, wall 0.636s (i8042 probe delay)
+T3 firecracker tuned: guest 0.057s, wall 0.127s

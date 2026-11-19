@@ -1,0 +1,9 @@
+#!/bin/sh
+mount -t proc proc /proc
+mount -t sysfs sys /sys
+echo "BOOTED guest_uptime=$(cut -d' ' -f1 /proc/uptime)s"
+case "$(cat /proc/cmdline)" in
+  *mode=dmesg*) dmesg ;;
+  *mode=sleep*) sleep 300 ;;
+esac
+reboot -f

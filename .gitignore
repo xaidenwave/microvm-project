@@ -1,0 +1,6 @@
+images/
+rootfs/
+release-v*/
+firecracker
+*.tar.gz
+.DS_Store
